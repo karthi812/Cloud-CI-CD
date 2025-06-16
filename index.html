@@ -1,1 +1,49 @@
-<html> <head> <title>My Website</title> </head> <body> <h1>Welcome to my website</h1> <p>This is a simple website hosted on AWS CodeCommit.</p> </body> </html>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Declaration Form</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="form-container">
+    <h1>Declaration Form</h1>
+    
+    <p class="declaration-text">
+      I hereby declare that the information provided below is true and correct to the best of my knowledge.
+    </p>
+
+    <form action="#" method="post">
+      <div class="form-group">
+        <label for="fullName">Full Name:</label>
+        <input type="text" id="fullName" name="fullName" required />
+      </div>
+
+      <div class="form-group">
+        <label for="email">Email Address:</label>
+        <input type="email" id="email" name="email" required />
+      </div>
+
+      <div class="form-group">
+        <label for="declarationText">Declaration:</label>
+        <textarea id="declarationText" name="declarationText" rows="5" required>
+I hereby declare that the details furnished above are true and correct to the best of my knowledge and belief.
+        </textarea>
+      </div>
+
+      <div class="form-group">
+        <label for="signature">Signature:</label>
+        <input type="text" id="signature" name="signature" placeholder="Type your full name" required />
+      </div>
+
+      <div class="form-group">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required />
+      </div>
+
+      <button type="submit">Submit Declaration</button>
+    </form>
+  </div>
+</body>
+</html>
